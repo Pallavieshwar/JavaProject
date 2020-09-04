@@ -7,18 +7,15 @@ import java.time.Month;
 
 public class DirFileCounter {
 	static String Path = new File("").getAbsolutePath();
-	
-	/*files Count 5
-	Created Month SEPTEMBER
-	Created Month SEPTEMBER
-	Created Month SEPTEMBER
-	Created Month SEPTEMBER
-	Created Month SEPTEMBER*/
 
-	
+	/*
+	 * files Count 5 Created Month SEPTEMBER Created Month SEPTEMBER Created Month
+	 * SEPTEMBER Created Month SEPTEMBER Created Month SEPTEMBER
+	 */
+
 	public static void main(String[] args) throws IOException {
 		File dir = new File(Path);
-  
+
 		File[] files = dir.listFiles();
 
 		System.out.println("files Count " + files.length);
